@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NLP Q&A System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     <div class="container">
         <h1>NLP Question-Answering System</h1>
+        <p class="subtitle">Powered by Google Gemini API</p>
         <form method="POST" action="/">
             <div class="form-group">
                 <label for="question">Enter your question:</label>
@@ -34,4 +37,5 @@
         {% endif %}
     </div>
 </body>
+
 </html>
